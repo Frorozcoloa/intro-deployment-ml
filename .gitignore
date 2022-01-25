@@ -1,5 +1,5 @@
 venv/
-.ipynb_checkpoints
+-pynb_checkpoints
 *.json
 *.csv
 *.pkl
