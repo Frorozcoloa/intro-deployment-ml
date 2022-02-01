@@ -6,4 +6,4 @@ app = FastAPI(docs_url='/')
 
 @app.post('/v1/prediction')
 def make_model_prediction(request:PredictionRequest):
-    return PredictionResponse(wordwide_gross=get_prediction(request))
+    return PredictionResponse(worldwide_gross=get_prediction(request))
