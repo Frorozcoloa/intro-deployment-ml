@@ -4,11 +4,11 @@ jobs:
   testing-api:
     runs-on: ubuntu-latest
     env:
-      SERVICE_ACCOUNT_KEY: ${{secretes.SERVICE_ACCOUNT_KEY}}
-    septs:
+      SERVICE_ACCOUNT_KEY: ${{secrets.SERVICE_ACCOUNT_KEY}}
+    steps:
       - name: Checkout the repo
         use: actions/checkout@v2
-      - name: creating and activatinf virtualenv
+      - name: creating and activating virtualenv
         run: |
           pip3 install virtualenv
           virtualenv venv
