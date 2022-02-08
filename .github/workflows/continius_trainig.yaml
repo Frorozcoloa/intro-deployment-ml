@@ -1,5 +1,8 @@
 name: Continius Training
-on: 
+on:
+  push:
+    branches:
+       - workflow_continuos_train
   schedule:
     - cron: '0*/6 * * *'
   worflow_dispatch:
